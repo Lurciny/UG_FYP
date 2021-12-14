@@ -11,17 +11,17 @@ Member: Nika, Ruby.
 
 - source code
   - test (project source code file folder)
-<br>
+
 - installation
   - [201225]EN-CAS.apk
   - [210425]CH-CAS.apk (for competition)
-<br>
+
 - documents
   - Demonstration video (CHN only, mute)
   - Final Thesis
   - Poster (FYP Poster Exhibition, May 2021)
   - Presentation powerpoint
-<br>
+
 - README.md
 
 ### Dependency
@@ -30,11 +30,11 @@ Member: Nika, Ruby.
   - Amap Location
   - Amap search
   - andnoid map 3d
-<br>
+
 - JDBC
   - mysql connector java
     - connect aliyun database public network
-<br>
+
 - aliyun RDS (mysql)
   - sql sequence to check, delete, update, add data and photo(Binary)
 
@@ -44,9 +44,9 @@ Member: Nika, Ruby.
   - teacher
   - student
   - administractor(The administrator allows some teachers view the list)
-<br>
+
 - login, select course for further operation
-<br>
+
 - set, update, delete, check attendance
 
   - take attendance by
