@@ -48,15 +48,15 @@ Member: Nika, Ruby.
 - login, select course for further operation
 <br>
 - set, update, delete, check attendance
-<br>
+
   - take attendance by
     - typing the button
     - upload required picture
-<br>
+
   - check attendance by
     - pointer & information in 3d map
     - picture
     - table
-<br>
+
   - set/update/delete attendance by
     - fill in contents
