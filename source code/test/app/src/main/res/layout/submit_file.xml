@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.submit_a_file.SubmitAFileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="61dp"
+        android:background="?attr/colorPrimary"
+        android:forceDarkAllowed="false"
+        android:longClickable="false"
+        android:minHeight="?attr/actionBarSize"
+        android:textAlignment="center"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:menu="@menu/toolbar_menu"
+        app:titleTextColor="#FFFFFF" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/horizonalTable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.397">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="Submit A Picture"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#187169"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Password"
+            app:layout_constraintHorizontal_bias="0.67"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/selectFile"
+                android:layout_width="118dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:background="#64B5F6"
+                android:text="Select"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:background="#DCE2EA"
+                android:gravity="center_horizontal|center_vertical"
+                />
+            <!--设置attr:auto_play="true"动态图就会自动播放，如果不设置，或未false图片就需要点了之后才播放 -->
+
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:text="Click to check your submission      ↑↑" />
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/horizonalTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:layout_margin="11dp"
+            android:background="#009688"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="#E36262"
+            android:text="Back"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
