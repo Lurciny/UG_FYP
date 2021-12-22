@@ -1,5 +1,5 @@
 
-## [UG_FYP] Campas Attendance System
+## [UG_FYP] Class Attendance System
 
 Class Attendance System for Android - Undergraduate Final Year Project from Jun 2020 to Dec 2020 in (BNU-HKBU) UIC.
 
